@@ -54,19 +54,24 @@ up to the lab sessions.
 
 | Date | Time | Topic | Material |
 | --- | --- | --- | --- |
-| 21/11 | 13:00-15:00 | Intro, deterministic parallelism, data parallelism, Futhark | [Parallel Programming in Futhark](https://futhark-book.readthedocs.io/en/latest/), sections 1-4, [Futhark exercises](bootstrap-exercises.md) | |
+| 21/11 | 13:00-15:00 | Intro, deterministic parallelism, data parallelism, Futhark | [Futhark exercises](bootstrap-exercises.md) | |
+| 21/11 | 15:00-17:00 | Lab | [Futhark exercises](bootstrap-exercises.md) | |
 | 23/11 | 10:00-12:00 | Cost models, advanced Futhark | [Guy Blelloch: Programming Parallel Algorithms](material/blelloch-programming-parallel-algorithms.pdf), [Prefix Sums and Their Applications](material/prefix-sums-and-their-applications.pdf), [A Provable Time and Space Efficient Implementation of NESL](material/a-provable-time-and-space-efficient-implementation-of-nesl.pdf) |
 | 23/11 | 15:00-17:00 | Lab (**Assignment 1 handout**) | |
 | 28/11 | 13:00-15:00 | List homomorphisms | [The Third Homomorphism Theorem](material/algorithms/lhomo-third-theorem.pdf), [Construction of List Homomorphisms by Tupling and Fusion](material/algorithms/lhomo-tupling.pdf) |
+| 28/11 | 15:00-17:00 | Lab | |
 | 30/11 | 10:00-12:00 | Vector programming with ISPC | [ispc: A SPMD Compiler for High-Performance CPU Programming](material/ispc_inpar_2012.pdf) | |
 | 30/12 | 15:00-17:00 | Lab (**Assignment 2 handout**) | |
 | 05/12 | 13:00-15:00 | Full/irregular flattening | [PMPH lecture notes, Chapter 4](material/flattening/lecture-notes-pmph.pdf), [Transforming High-Level Data-Parallel Programs into Vector Operations](material/flattening/NeslFlatTechPaper.pdf), [Harnessing the Multicores: Nested Data Parallelism in Haskell](material/flattening/harnessing-multicores.pdf) (not easy to read)|
+| 05/12 | 15:00-17:00 | Lab | |
 | 07/12 | 10:00-12:00 | Full/irregular flattening | [PMPH lecture notes, Chapter 4](material/flattening/lecture-notes-pmph.pdf), [Transforming High-Level Data-Parallel Programs into Vector Operations](material/flattening/NeslFlatTechPaper.pdf), [Harnessing the Multicores: Nested Data Parallelism in Haskell](material/flattening/harnessing-multicores.pdf) (not easy to read)|
 | 07/12 | 15:00-17:00 | Lab (**Assignment 3 handout**) | |
 | 12/12 | 13:00-15:00 | Polyhedral Analysis | [PMPH Dependence Analysis](material/poly/L5-LoopParI.pdf); [Sven Verdoolaege: Presburger Formulas and Polyhedral Compilation (tutorial)](material/poly/polycomp-tutorial.pdf); [Sven Verdoolaege: Presburger Sets and Relations: from High-Level Modelling to Low-Level Implementation (slides)](material/poly/poly-in-detail.pdf), [Code Examples](material/poly/poly-code-egs/) |
+| 12/12 | 15:00-17:00 | Lab | |
 | 14/12 | 10:00-12:00 | Regular and incremental flattening | [Futhark: Purely Functional GPU-Programming with Nested Parallelism and In-Place Array Updates](https://futhark-lang.org/publications/pldi17.pdf),  [Incremental Flattening for Nested Data Parallelism](https://futhark-lang.org/publications/ppopp19.pdf) (particularly the latter) |
 | 14/12 | 15:00-17:00 | Lab (**Assignment 4 handout**) | |
 | 19/12 | 13:00-15:00 | Data-parallel automatic differentiation | [Automatic Differentiation in Machine Learning: a Survey, Baydin et. al.](material/automatic_differentiation_in_ml_baydin.pdf), [autodiff.fut](material/autodiff.fut) |
+| 19/12 | 15:00-17:00 | Lab | |
 | 21/12 | 10:00-12:00 | Data-parallel automatic differentiation | same material as previous lecture |
 | 21/12 | 13:00-15:00 | Lab (with project proposals) | |
 
