@@ -123,24 +123,30 @@ group will answer individual questions for about 10 min.
 ## Practical information
 
 You may find it useful to make use of DIKUs GPU machines in your work.
-You log in by first SSHing to the bastion server
-`ssh-diku-apl.science.ku.dk` using your KU license plate (`abc123`) as
-the user name, and then SSHing on to one of the GPU machines.  Despite
-their names, they each have two multi-core CPUs and plenty of RAM as
-well.
 
-  * `gpu01-diku-apl`, `gpu02-diku-apl`, `gpu03-diku-apl` have dual GTX
-    780 Ti GPUs.
+To connect you need one of the following:
 
-  * `phi-diku-apl` has a K40 GPU.
+* Be [connected to the KU VPN](https://github.com/diku-dk/howto/blob/main/vpn.md)
 
-  * `gpu04-diku-apl` has a GTX 2080 Ti GPU (by far the fastest).
+* Be physically connected to the *wired network* at DIKU.
+
+* Be logged onto the `ssh-diku-apl.science.ku.dk` gateway server.
+
+Once this is done, you can access the GPU machines by SSH'ing to the
+following hosts:
+
+* `futharkhpa01fl.unicph.domain`
+
+* `futharkhpa02fl.unicph.domain`
+
+* `futharkhpa03fl.unicph.domain`
+
+Log in with your usual KU login information.
 
 All machines should have all the software installed you need.  If you
 are missing something, [contact Troels](mailto:athas@sigkill.dk).  The
-machines have a shared home directory (which is very slow), *except*
-`gpu01-diku-apl`, which has its own home directory (which is a little
-faster).
+first and last machine has NVIDIA A100 GPUs, and the second machine
+has an AMD MI100 GPU.
 
 ### SSH setup
 
@@ -148,17 +154,17 @@ To enable more convenient access to the servers, you can add entries
 to your `~/.ssh/config` file.  Example:
 
 ```
-Host gpu04-diku-apl
-HostName gpu04-diku-apl
+Host futhark01
+HostName futharkhpa01fl.unicph.domain
 ProxyJump mzd885@ssh-diku-apl.science.ku.dk
 User mzd885
 ForwardAgent yes
 ```
 
-Replace `gpu04-diku-apl` with the server you want and `mzd885` with
-your KU license plate (unless you are fortunate enough to be Troels).
-After this you can use `ssh gpu04-diku-apl` to log in directly
-(although you will still need to enter your password twice).
+Replace `mzd885` with your KU license plate (unless you are fortunate
+enough to be Troels).  After this you can use `ssh futhark01` to log
+in directly (although you will still need to enter your password
+twice).
 
 The real win is that now you can use
 [sshfs](https://www.digitalocean.com/community/tutorials/how-to-use-sshfs-to-mount-remote-file-systems-over-ssh)
@@ -166,7 +172,7 @@ to mount the remote file system on your local machine:
 
 ```
 $ mkdir remote
-$ sshfs gpu04-diku-apl: remote
+$ sshfs futhark01: remote
 ```
 
 ### GPU setup
@@ -174,12 +180,9 @@ $ sshfs gpu04-diku-apl: remote
 For CUDA to work, you may need to add the following to your `$HOME/.bash_profile`:
 
 ```bash
-CUDA_DIR=/usr/local/cuda
-export PATH=$CUDA_DIR/bin:$PATH
-export LD_LIBRARY_PATH=$CUDA_DIR/lib64:$LD_LIBRARY_PATH
-export LIBRARY_PATH=$LD_LIBRARY_PATH:$LIBRARY_PATH
-export CPLUS_INCLUDE_PATH=$CUDA_DIR/include:$CPLUS_INCLUDE_PATH
-export C_INCLUDE_PATH=$CUDA_DIR/include:$C_INCLUDE_PATH
+export CPATH=/opt/rocm/opencl/include:/usr/local/cuda/include:$CPATH
+export LIBRARY_PATH=/opt/rocm/opencl/lib:/usr/local/cuda/lib64:$LIBRARY_PATH
+export LD_LIBRARY_PATH=/opt/rocm/opencl/lib:/usr/local/cuda/lib64:$LD_LIBRARY_PATH
 ```
 
 ## Other resources
