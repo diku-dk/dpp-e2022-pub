@@ -54,7 +54,7 @@ up to the lab sessions.
 
 | Date | Time | Topic | Material |
 | --- | --- | --- | --- |
-| 21/11 | 13:00-15:00 | Intro, deterministic parallelism, data parallelism, Futhark | [Futhark exercises](bootstrap-exercises.md) | |
+| 21/11 | 13:00-15:00 | Intro, deterministic parallelism, data parallelism, Futhark | [Parallel Programming in Futhark](https://futhark-book.readthedocs.io/en/latest/), sections 1-4 | |
 | 21/11 | 15:00-17:00 | Lab | [Futhark exercises](bootstrap-exercises.md) | |
 | 23/11 | 10:00-12:00 | Cost models, advanced Futhark | [Guy Blelloch: Programming Parallel Algorithms](material/blelloch-programming-parallel-algorithms.pdf), [Prefix Sums and Their Applications](material/prefix-sums-and-their-applications.pdf), [A Provable Time and Space Efficient Implementation of NESL](material/a-provable-time-and-space-efficient-implementation-of-nesl.pdf) |
 | 23/11 | 15:00-17:00 | Lab (**Assignment 1 handout**) | |
