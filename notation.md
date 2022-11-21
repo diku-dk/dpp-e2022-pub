@@ -30,10 +30,10 @@ the operands using some conversion function (which might involve
 rounding).
 
 Functions are also values in Futhark, and like all values they have
-type.  For a function that accepts a single `i32` and returns a single
-`i32`, we write that it has type `i32 -> i32`.  By looking at the type
-of a function we can determine what inputs it accepts and what results
-it produces.
+types.  For a function that accepts a single `i32` and returns a
+single `i32`, we write that it has type `i32 -> i32`.  By looking at
+the type of a function we can determine what inputs it accepts and
+what results it produces.
 
 ## Function application
 
