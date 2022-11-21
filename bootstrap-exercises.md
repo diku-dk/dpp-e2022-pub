@@ -16,13 +16,13 @@ concepts, see [this basic guide on notation](notation.md).
 Implement the following Futhark utility functions:
 
 ```
-let rotate [n] 't (r: i64) (xs: [n]t) : [n]t =
+def rotate [n] 't (r: i64) (xs: [n]t) : [n]t =
   ...
 
-let transpose [n] [m] 't (xss: [n][m]t) : [m][n]t =
+def transpose [n] [m] 't (xss: [n][m]t) : [m][n]t =
   ...
 
-let concat [n] [m] 't (xs: [n]t) (ys: [m]t) : []t =
+def concat [n] [m] 't (xs: [n]t) (ys: [m]t) : []t =
   ...
 
 ```
@@ -79,20 +79,20 @@ Implement the following functions using `map`, `map2`, `reduce`, and
 
 ```
 -- Multiply every element of vector with a scalar.
-let vec_scale [n] (s: f32) (xs: [n]f32) : [n]f32 =
+def vec_scale [n] (s: f32) (xs: [n]f32) : [n]f32 =
   ...
 
 -- Elementwise addition of vectors.
-let vec_add [n] (xs: [n]f32) (xs: [n]f32) : [n]f32 =
+def vec_add [n] (xs: [n]f32) (ys: [n]f32) : [n]f32 =
   ...
 
 -- Dot product.
-let dotprod [n] (xs: [n]f32) (ys: [n]f32) : f32 =
+def dotprod [n] (xs: [n]f32) (ys: [n]f32) : f32 =
   ...
 
 -- Matrix multiplication (the dot product of the rows of 'xss'
 -- with the columns of 'yss').
-let matmul [n][m][p] (xss: [n][p]f32) (yss: [p][m]f32) : [n][m]f32 =
+def matmul [n][m][p] (xss: [n][p]f32) (yss: [p][m]f32) : [n][m]f32 =
   ...
 ```
 
