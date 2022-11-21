@@ -8,6 +8,9 @@ The following exercises serve as a simple introduction to Futhark
 programming.  They should be solvable using material from the Monday
 lecture and [the Futhark book](https://futhark-book.readthedocs.io).
 
+If you are unfamiliar with functional programming notation and
+concepts, see [this basic guide on notation](notation.md).
+
 ## Reimplement library functions
 
 Implement the following Futhark utility functions:
@@ -35,6 +38,29 @@ backend?
 Use `loop` to implement a function for counting how many `1` bits are
 set in an `i32` value.  Test your results against the built-in
 `i32.popc`.
+
+### Hints
+
+* In Futhark we can write binary literals by prefixing them with `0b`
+  (this is only necessary for testing).
+
+* The `i32.get_bit` function returns a bit from an integer:
+
+  ```
+  > i32.get_bit 0 0b10001
+  1
+  > i32.get_bit 1 0b10001
+  0
+  ```
+
+* Testing the builtin `i32.popc`:
+
+  ```
+  > i32.popc 0b10001
+  2
+  > i32.popc 0b11111
+  5
+  ```
 
 ## Implement 1D smoothing
 

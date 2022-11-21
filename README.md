@@ -130,7 +130,7 @@ To connect you need one of the following:
 
 * Be physically connected to the *wired network* at DIKU.
 
-* Be logged onto the `ssh-diku-apl.science.ku.dk` gateway server.
+* Be logged onto the `ssh-diku.science.ku.dk` gateway server.
 
 Once this is done, you can access the GPU machines by SSH'ing to the
 following hosts:
@@ -156,7 +156,7 @@ to your `~/.ssh/config` file.  Example:
 ```
 Host futhark01
 HostName futharkhpa01fl.unicph.domain
-ProxyJump mzd885@ssh-diku-apl.science.ku.dk
+ProxyJump mzd885@ssh-diku.science.ku.dk
 User mzd885
 ForwardAgent yes
 ```
