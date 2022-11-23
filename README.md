@@ -1,5 +1,12 @@
 # Data Parallel Programming (DPP), Block 2 2022
 
+## Nvidia Acknowledgements
+
+We are grateful to Nvidia for awarding us a teaching grant (for the PMPH and DPP courses) that consists of two A100 GPUs. These are now accessible on the server futharkhpa03fl.unicph.domain
+
+
+## Course Structure
+
 DPP is structured around five weeks with lectures and lab sessions
 on Monday and Wednesday, followed by a final project to be
 presented orally at the exam.  Throughout the course, you will hand in
