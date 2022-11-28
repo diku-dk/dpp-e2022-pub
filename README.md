@@ -65,7 +65,7 @@ up to the lab sessions.
 | 21/11 | 15:00-17:00 | Lab | [Futhark exercises](bootstrap-exercises.md) | |
 | 23/11 | 10:00-12:00 | [Cost models, advanced Futhark](slides/L2-advanced-futhark-cost-models.pdf) | [Guy Blelloch: Programming Parallel Algorithms](material/blelloch-programming-parallel-algorithms.pdf), [Prefix Sums and Their Applications](material/prefix-sums-and-their-applications.pdf), [A Provable Time and Space Efficient Implementation of NESL](material/a-provable-time-and-space-efficient-implementation-of-nesl.pdf) |
 | 23/11 | 13:00-15:00 | Lab ([**Assignment 1 handout**](weekly-1/)) | |
-| 28/11 | 13:00-15:00 | List homomorphisms | [The Third Homomorphism Theorem](material/algorithms/lhomo-third-theorem.pdf), [Construction of List Homomorphisms by Tupling and Fusion](material/algorithms/lhomo-tupling.pdf) |
+| 28/11 | 13:00-15:00 | [List homomorphisms](slides/L3-list-homomorphisms.pdf) | [The Third Homomorphism Theorem](material/algorithms/lhomo-third-theorem.pdf), [Construction of List Homomorphisms by Tupling and Fusion](material/algorithms/lhomo-tupling.pdf) |
 | 28/11 | 15:00-17:00 | Lab | |
 | 30/11 | 10:00-12:00 | Vector programming with ISPC | [ispc: A SPMD Compiler for High-Performance CPU Programming](material/ispc_inpar_2012.pdf) | |
 | 30/12 | 13:00-15:00 | Lab (**Assignment 2 handout**) | |
