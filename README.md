@@ -68,7 +68,7 @@ up to the lab sessions.
 | 28/11 | 13:00-15:00 | [List homomorphisms](slides/L3-list-homomorphisms.pdf) | [The Third Homomorphism Theorem](material/algorithms/lhomo-third-theorem.pdf), [Construction of List Homomorphisms by Tupling and Fusion](material/algorithms/lhomo-tupling.pdf) |
 | 28/11 | 15:00-17:00 | Lab | |
 | 30/11 | 10:00-12:00 | [Vector programming with ISPC](slides/L4-ispc.pdf) | [ispc: A SPMD Compiler for High-Performance CPU Programming](material/ispc_inpar_2012.pdf) | |
-| 30/12 | 13:00-15:00 | Lab (**Assignment 2 handout**) | |
+| 30/12 | 13:00-15:00 | Lab ([**Assignment 2 handout**](weekly-2/)) | |
 | 05/12 | 13:00-15:00 | Full/irregular flattening | [PMPH lecture notes, Chapter 4](material/flattening/lecture-notes-pmph.pdf), [Transforming High-Level Data-Parallel Programs into Vector Operations](material/flattening/NeslFlatTechPaper.pdf), [Harnessing the Multicores: Nested Data Parallelism in Haskell](material/flattening/harnessing-multicores.pdf) (not easy to read)|
 | 05/12 | 15:00-17:00 | Lab | |
 | 07/12 | 10:00-12:00 | Full/irregular flattening | [PMPH lecture notes, Chapter 4](material/flattening/lecture-notes-pmph.pdf), [Transforming High-Level Data-Parallel Programs into Vector Operations](material/flattening/NeslFlatTechPaper.pdf), [Harnessing the Multicores: Nested Data Parallelism in Haskell](material/flattening/harnessing-multicores.pdf) (not easy to read)|
