@@ -137,8 +137,6 @@ To connect you need one of the following:
 
 * Be physically connected to the *wired network* at DIKU.
 
-* Be logged onto the `ssh-diku.science.ku.dk` gateway server.
-
 Once this is done, you can access the GPU machines by SSH'ing to the
 following hosts:
 
@@ -155,31 +153,13 @@ are missing something, [contact Troels](mailto:athas@sigkill.dk).  The
 first and last machine has NVIDIA A100 GPUs, and the second machine
 has an AMD MI100 GPU.
 
-### SSH setup
-
-To enable more convenient access to the servers, you can add entries
-to your `~/.ssh/config` file.  Example:
-
-```
-Host futhark01
-HostName futharkhpa01fl.unicph.domain
-ProxyJump mzd885@ssh-diku.science.ku.dk
-User mzd885
-ForwardAgent yes
-```
-
-Replace `mzd885` with your KU license plate (unless you are fortunate
-enough to be Troels).  After this you can use `ssh futhark01` to log
-in directly (although you will still need to enter your password
-twice).
-
-The real win is that now you can use
+Consider using
 [sshfs](https://www.digitalocean.com/community/tutorials/how-to-use-sshfs-to-mount-remote-file-systems-over-ssh)
 to mount the remote file system on your local machine:
 
 ```
 $ mkdir remote
-$ sshfs futhark01: remote
+$ sshfs futharkhpa01fl.unicph.domain: remote
 ```
 
 ### GPU setup
