@@ -75,7 +75,7 @@ up to the lab sessions.
 | 07/12 | 13:00-15:00 | Lab ([**Assignment 3 handout**](weekly-3/)) | |
 | 12/12 | 13:00-15:00 | [Polyhedral Analysis](slides/L8-polyhedral.pdf) | [PMPH Dependence Analysis](material/poly/L5-LoopParI.pdf); [Sven Verdoolaege: Presburger Formulas and Polyhedral Compilation (tutorial)](material/poly/polycomp-tutorial.pdf); [Sven Verdoolaege: Presburger Sets and Relations: from High-Level Modelling to Low-Level Implementation (slides)](material/poly/poly-in-detail.pdf), [Code Examples](material/poly/poly-code-egs/) |
 | 12/12 | 15:00-17:00 | Lab | |
-| 14/12 | 10:00-12:00 | Regular and incremental flattening | [Futhark: Purely Functional GPU-Programming with Nested Parallelism and In-Place Array Updates](https://futhark-lang.org/publications/pldi17.pdf),  [Incremental Flattening for Nested Data Parallelism](https://futhark-lang.org/publications/ppopp19.pdf) (particularly the latter) |
+| 14/12 | 10:00-12:00 | [Regular and incremental flattening](slides/L8-regular-flattening.pdf) | [Futhark: Purely Functional GPU-Programming with Nested Parallelism and In-Place Array Updates](https://futhark-lang.org/publications/pldi17.pdf),  [Incremental Flattening for Nested Data Parallelism](https://futhark-lang.org/publications/ppopp19.pdf) (particularly the latter) |
 | 14/12 | 13:00-15:00 | Lab (**Assignment 4 handout**) | |
 | 19/12 | 13:00-15:00 | Data-parallel automatic differentiation | [Automatic Differentiation in Machine Learning: a Survey, Baydin et. al.](material/automatic_differentiation_in_ml_baydin.pdf), [autodiff.fut](material/autodiff.fut) |
 | 19/12 | 15:00-17:00 | Lab | |
