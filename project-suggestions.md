@@ -78,3 +78,15 @@ interesting parallelism, and so are not a good DPP project).
 Please see [Rank-Search-k project presentation.](group-projects/rank-search-k/Project-RankSearch-k.pdf)
 
 The fastest way of sorting that we know of is by using [Cuda's CUB library](group-projects/cub-code). You may adapt the code to sort a batch of (irregular) arrays and use that as a baseline for comparison. 
+
+## QR Decomposition/Factorization
+
+We are interested in developing efficient implementation(s) for QR decomposition
+in a high-level parallel language (Futhark). You are supposed to do a quick literature
+search and find suitable implementations, and then to pick a "reasonably-complex" one,
+implement it in Futhark and report a systematic performance evaluation, e.g., you can use
+as baseline Cublas' implementation and report performance in GFlops/sec.
+
+A very quick google search has revealed several related papers, for example
+[QR Decomposition on GPUs, 2009](group-projects/QR-decomposition/QR-decomp-GPU.pdf) and
+[Implementing QR factorization updating algorithms on GPUs](group-projects/QR-decomposition/QR-fact-updates-GPU.pdf).
