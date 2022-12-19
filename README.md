@@ -75,8 +75,8 @@ up to the lab sessions.
 | 07/12 | 13:00-15:00 | Lab ([**Assignment 3 handout**](weekly-3/)) | |
 | 12/12 | 13:00-15:00 | [Polyhedral Analysis](slides/L8-polyhedral.pdf) | [PMPH Dependence Analysis](material/poly/L5-LoopParI.pdf); [Sven Verdoolaege: Presburger Formulas and Polyhedral Compilation (tutorial)](material/poly/polycomp-tutorial.pdf); [Sven Verdoolaege: Presburger Sets and Relations: from High-Level Modelling to Low-Level Implementation (slides)](material/poly/poly-in-detail.pdf), [Code Examples](material/poly/poly-code-egs/) |
 | 12/12 | 15:00-17:00 | Lab | |
-| 14/12 | 10:00-12:00 | Regular and incremental flattening | [Futhark: Purely Functional GPU-Programming with Nested Parallelism and In-Place Array Updates](https://futhark-lang.org/publications/pldi17.pdf),  [Incremental Flattening for Nested Data Parallelism](https://futhark-lang.org/publications/ppopp19.pdf) (particularly the latter) |
-| 14/12 | 13:00-15:00 | Lab (**Assignment 4 handout**) | |
+| 14/12 | 10:00-12:00 | [Regular and incremental flattening](slides/L8-regular-flattening.pdf) | [Futhark: Purely Functional GPU-Programming with Nested Parallelism and In-Place Array Updates](https://futhark-lang.org/publications/pldi17.pdf),  [Incremental Flattening for Nested Data Parallelism](https://futhark-lang.org/publications/ppopp19.pdf) (particularly the latter), **Optional:** [Dataset Sensitive Autotuning of Multi-Versioned Code based on Monotonic Properties](https://futhark-lang.org/publications/tfp21.pdf) |
+| 14/12 | 13:00-15:00 | Lab ([**Assignment 4 handout**](weekly-4/)) | |
 | 19/12 | 13:00-15:00 | [Data-parallel automatic differentiation](slides/L9-AD.pdf) | [Automatic Differentiation in Machine Learning: a Survey, Baydin et. al.](material/automatic_differentiation_in_ml_baydin.pdf), [autodiff.fut](material/autodiff.fut) [AD for an Array Language with Nested Parallelism](material/ad-sc22/pdf) |
 | 19/12 | 15:00-17:00 | Lab | |
 | 21/12 | 10:00-12:00 | [Data-parallel automatic differentiation](slides/L9-AD.pdf) | same material as previous lecture |
@@ -137,8 +137,6 @@ To connect you need one of the following:
 
 * Be physically connected to the *wired network* at DIKU.
 
-* Be logged onto the `ssh-diku.science.ku.dk` gateway server.
-
 Once this is done, you can access the GPU machines by SSH'ing to the
 following hosts:
 
@@ -155,31 +153,13 @@ are missing something, [contact Troels](mailto:athas@sigkill.dk).  The
 first and last machine has NVIDIA A100 GPUs, and the second machine
 has an AMD MI100 GPU.
 
-### SSH setup
-
-To enable more convenient access to the servers, you can add entries
-to your `~/.ssh/config` file.  Example:
-
-```
-Host futhark01
-HostName futharkhpa01fl.unicph.domain
-ProxyJump mzd885@ssh-diku.science.ku.dk
-User mzd885
-ForwardAgent yes
-```
-
-Replace `mzd885` with your KU license plate (unless you are fortunate
-enough to be Troels).  After this you can use `ssh futhark01` to log
-in directly (although you will still need to enter your password
-twice).
-
-The real win is that now you can use
+Consider using
 [sshfs](https://www.digitalocean.com/community/tutorials/how-to-use-sshfs-to-mount-remote-file-systems-over-ssh)
 to mount the remote file system on your local machine:
 
 ```
 $ mkdir remote
-$ sshfs futhark01: remote
+$ sshfs futharkhpa01fl.unicph.domain: remote
 ```
 
 ### GPU setup
