@@ -123,3 +123,11 @@ implementing it in the compiler.
 
 This kind of project is most interesting to people who wish to do more
 Futhark-related projects later in their studies.
+
+## Implementing NPB-EP and NPB-CG
+
+Implement the EP and CG benchmarks from [NAS Parallel
+Benchmarks](https://www.nas.nasa.gov/software/npb.html) in Futhark and
+use them to perform a measurement of Futhark's performance portability
+[as in this
+paper](https://link.springer.com/article/10.1007/s10766-022-00746-1).
