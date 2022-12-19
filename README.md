@@ -77,9 +77,9 @@ up to the lab sessions.
 | 12/12 | 15:00-17:00 | Lab | |
 | 14/12 | 10:00-12:00 | Regular and incremental flattening | [Futhark: Purely Functional GPU-Programming with Nested Parallelism and In-Place Array Updates](https://futhark-lang.org/publications/pldi17.pdf),  [Incremental Flattening for Nested Data Parallelism](https://futhark-lang.org/publications/ppopp19.pdf) (particularly the latter) |
 | 14/12 | 13:00-15:00 | Lab (**Assignment 4 handout**) | |
-| 19/12 | 13:00-15:00 | Data-parallel automatic differentiation | [Automatic Differentiation in Machine Learning: a Survey, Baydin et. al.](material/automatic_differentiation_in_ml_baydin.pdf), [autodiff.fut](material/autodiff.fut) |
+| 19/12 | 13:00-15:00 | [Data-parallel automatic differentiation](slides/L9-AD.pdf) | [Automatic Differentiation in Machine Learning: a Survey, Baydin et. al.](material/automatic_differentiation_in_ml_baydin.pdf), [autodiff.fut](material/autodiff.fut) [AD for an Array Language with Nested Parallelism](material/ad-sc22/pdf) |
 | 19/12 | 15:00-17:00 | Lab | |
-| 21/12 | 10:00-12:00 | Data-parallel automatic differentiation | same material as previous lecture |
+| 21/12 | 10:00-12:00 | [Data-parallel automatic differentiation](slides/L9-AD.pdf) | same material as previous lecture |
 | 21/12 | 13:00-15:00 | Lab (with project proposals) | |
 
 After New Years, *maybe* there will be no lectures (we are still thinking on it),
