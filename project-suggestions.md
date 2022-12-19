@@ -90,3 +90,36 @@ as baseline Cublas' implementation and report performance in GFlops/sec.
 A very quick google search has revealed several related papers, for example
 [QR Decomposition on GPUs, 2009](group-projects/QR-decomposition/QR-decomp-GPU.pdf) and
 [Implementing QR factorization updating algorithms on GPUs](group-projects/QR-decomposition/QR-fact-updates-GPU.pdf).
+
+## Implementing full flattening in the Futhark compiler
+
+We are currently working on implementing full flattening in the
+Futhark compiler.  [The current state of the implementation can be
+seen
+here.](https://github.com/diku-dk/futhark/blob/flattening/src/Futhark/Pass/Flatten.hs).
+The current implementation is very incomplete, but can handle some
+programs.  This project is about implementing *simple* missing cases
+in the flattening transformation.  Ideas (one of these is probably
+enough):
+
+* The general case of slicing is implemented, but one could implement
+  a more efficient version of the case where the *size* is invariant
+  to the `map` and only offset/stride is variant.
+
+* Implementing segmented transpose.
+
+* Implementing segmented update.
+
+* Implementing segmented concat.
+
+This project involves hacking on the actual Futhark compiler, which is
+written in Haskell.  Further, it is designed to be a *good compiler*,
+rather than to be immediately accessible to students.  However, you
+can expect significant help in figuring out the compiler side of
+things.  This is a *tricky* project, which is why what is expected of
+you is relatively small.  You might start by first implementing (in
+normal Futhark) an example of the code you want, and then afterwards
+implementing it in the compiler.
+
+This kind of project is most interesting to people who wish to do more
+Futhark-related projects later in their studies.
