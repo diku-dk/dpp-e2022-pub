@@ -72,3 +72,9 @@ The ones listed as *Basic Building Blocks* are all pretty
 straightforward.  Look at the others and pick whatever looks
 interesting (but talk to us first - some, e.g. rayCast, involve no
 interesting parallelism, and so are not a good DPP project).
+
+## Flattening a Batch of Rank-Search-k Problems
+
+Please see [Rank-Search-k project presentation.](group-projects/rank-search-k/Project-RankSearch-k.pdf)
+
+The fastest way of sorting that we know of is by using [Cuda's CUB library](group-projects/cub-code). You may adapt the code to sort a batch of (irregular) arrays and use that as a baseline for comparison. 
