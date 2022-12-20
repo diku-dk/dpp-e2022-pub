@@ -91,6 +91,17 @@ A very quick google search has revealed several related papers, for example
 [QR Decomposition on GPUs, 2009](group-projects/QR-decomposition/QR-decomp-GPU.pdf) and
 [Implementing QR factorization updating algorithms on GPUs](group-projects/QR-decomposition/QR-fact-updates-GPU.pdf).
 
+## Translating a Mpack-2 benchmark to Futhark and using AD to show the Jacobian-sparsity pattern
+
+This project refers to translating *one* of the benchmarks from the "MINPACK-2 test problem collection" (from Fortran) to Futhark and then using Futhark's AD support to compute the Jacobian of the objective function and to display the sparsity pattern of the Jacobian.
+
+[Here is where you find the Fortran code for the "MINPACK-2 test problem collection"](https://github.com/jacobwilliams/MINPACK-2/tree/master/tprobs). There is a README at that location, please read it to understand which files implement what problem. Once you have found the proper files, please remember that you need to translate to Futhark only the "objective function", i.e., the Fortran implementation also computes (by hand) the gradient/Jacobian, sparsity pattern and other things.
+
+[Here is an article presenting the "MINPACK-2 test problem collection"](group-projects/Mpack-2/Minpack-2.pdf).
+
+[Here is another article that analyses the sparsity of several MINPACK-2 problems, specifically, flow in a driven cavity (FDC), flow in a channel (FIC), incompressible elastic rod (IER), swirling flow between disks (SFD), solid fuel ignition (SFI)](group-projects/Mpack-2/Efficient_Computation_of_Gradients_and_Jacobians_b.pdf)
+
+
 ## Implementing full flattening in the Futhark compiler
 
 We are currently working on implementing full flattening in the
