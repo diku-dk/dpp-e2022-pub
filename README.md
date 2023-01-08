@@ -89,7 +89,8 @@ but labs will still be held to help with the group project.
 | ---  | ---  |
 | 02/1 | 15:00-17:00 |
 | 04/1 | 13:00-15:00 |
-| 09/1 | 15:00-17:00 |
+| 09/1 | 13:00-15:00 | [Halide: A DSL for Image Processing](slides/L10-Halide.pdf) | [Halide PLDI'13](material/halide-pldi13.pdf), [Stencil Fusion Optional Exercises](weekly-optional)
+| 09/1 | 15:00-17:00 | 
 | 11/1 | 13:00-15:00 |
 
 ## Weekly assignments
