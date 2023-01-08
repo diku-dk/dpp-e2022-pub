@@ -85,13 +85,13 @@ up to the lab sessions.
 After New Years, *maybe* there will be no lectures (we are still thinking on it),
 but labs will still be held to help with the group project.
 
-| Date | Time |
-| ---  | ---  |
-| 02/1 | 15:00-17:00 |
-| 04/1 | 13:00-15:00 |
-| 09/1 | 13:00-15:00 | [Halide: A DSL for Image Processing](slides/L10-Halide.pdf) | [Halide PLDI'13](material/halide-pldi13.pdf), [Stencil Fusion Optional Exercises](weekly-optional)
-| 09/1 | 15:00-17:00 | 
-| 11/1 | 13:00-15:00 |
+| Date | Time | Topic | Material |
+| ---  | ---  | ---   | ---      |
+| 02/1 | 15:00-17:00 | | |
+| 04/1 | 13:00-15:00 | | |
+| 09/1 | 13:00-15:00 | [Halide: A DSL for Image Processing](slides/L10-Halide.pdf) | [Halide PLDI'13](material/halide-pldi13.pdf), [Stencil Fusion Optional Exercises](weekly-optional) |
+| 09/1 | 15:00-17:00 | Group Project | Help with group project |
+| 11/1 | 13:00-15:00 | Group Project | Help with group project |
 
 ## Weekly assignments
 
